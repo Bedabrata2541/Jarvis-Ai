@@ -1,0 +1,117 @@
+.empty-state{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    text-align:center;
+    width:100%;
+}
+
+.hero-logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.empty-state h1{
+    font-size:64px;
+    font-weight:700;
+    color:#fff;
+    margin:10px 0;
+}
+
+.empty-state p{
+    color:#9CA3AF;
+    font-size:22px;
+    margin-bottom:45px;
+}
+
+/* ---------- Prompt Cards ---------- */
+
+.prompt-grid{
+    display:grid;
+    grid-template-columns:repeat(2,340px);
+    gap:22px;
+    justify-content:center;
+}
+
+.prompt-card{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    padding:24px 28px;
+
+    background:#171717;
+
+    border:1px solid #2B2B2B;
+
+    border-radius:22px;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+
+    text-align:left;
+}
+
+.prompt-card:hover{
+
+    background:#1F1F1F;
+
+    border-color:#10A37F;
+
+    transform:translateY(-4px);
+
+}
+
+.prompt-icon{
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#10A37F;
+
+    font-size:24px;
+
+    flex-shrink:0;
+}
+
+.prompt-card span{
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    line-height:1.4;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .prompt-grid{
+
+        grid-template-columns:1fr;
+
+        width:90%;
+
+    }
+
+    .prompt-card{
+
+        width:100%;
+
+    }
+
+}   

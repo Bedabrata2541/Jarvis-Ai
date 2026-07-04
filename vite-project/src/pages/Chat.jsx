@@ -140,7 +140,7 @@ if (messages.length === 0) {
 
           {messages.length === 0 ? (
 
-            <EmptyState />
+           <EmptyState onPromptClick={sendMessage} />
 
           ) : (
 
