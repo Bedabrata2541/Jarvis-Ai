@@ -1,0 +1,236 @@
+/* ==========================
+   Google Font
+========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* ==========================
+   Main Layout
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #09090b;
+}
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  background:
+    radial-gradient(circle at top left, #1d4ed833, transparent 40%),
+    radial-gradient(circle at bottom right, #10a37f33, transparent 40%),
+    #09090b;
+}
+
+/* ==========================
+   Left Side
+========================== */
+
+.signup-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+}
+
+.signup-left h1 {
+  color: #ffffff;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.signup-left p {
+  color: #a1a1aa;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+/* ==========================
+   Right Side
+========================== */
+
+.signup-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================
+   Signup Card
+========================== */
+
+.signup-card {
+  width: 430px;
+  padding: 45px;
+  border-radius: 24px;
+  background: rgba(17, 17, 19, 0.75);
+  backdrop-filter: blur(18px);
+  border: 1px solid #27272a;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.signup-card h2 {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.signup-card p {
+  text-align: center;
+  color: #a1a1aa;
+  margin-bottom: 30px;
+}
+
+.signup-card label {
+  color: #f4f4f5;
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 18px;
+  font-size: 15px;
+}
+
+/* ==========================
+   Inputs
+========================== */
+
+.signup-card input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid #27272a;
+  background: #18181b;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.signup-card input:focus {
+  border-color: #10a37f;
+  box-shadow: 0 0 12px rgba(16, 163, 127, 0.4);
+}
+
+/* ==========================
+   Password
+========================== */
+
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  padding-right: 50px;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #a1a1aa;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ==========================
+   Button
+========================== */
+
+.signup-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  background: #10a37f;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: #0e8f70;
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   Login Link
+========================== */
+
+.login-link {
+  margin-top: 25px;
+  font-size: 15px;
+  text-align: center;
+  color: #a1a1aa;
+}
+
+.login-link a {
+  color: #10a37f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 900px) {
+  .signup-left {
+    display: none;
+  }
+
+  .signup-right {
+    padding: 20px;
+  }
+
+  .signup-card {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+/* ==========================
+   Logo
+========================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.logo-icon {
+  width: 60px;
+  height: 60px;
+  background: #10a37f;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  box-shadow: 0 0 20px rgba(16, 163, 127, 0.35);
+}
+
+.logo-text h2 {
+  color: white;
+  font-size: 24px;
+}
+
+.logo-text p {
+  color: #a1a1aa;
+  font-size: 14px;
+  margin-top: 5px;
+}

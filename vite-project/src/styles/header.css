@@ -1,0 +1,59 @@
+.chat-header{
+height:70px;
+background:#111113;
+border-bottom:1px solid #27272A;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 30px;
+}
+
+.header-left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.robot-icon{
+font-size:24px;
+color:#10A37F;
+}
+
+.header-left h3{
+color:white;
+margin:0;
+}
+
+.header-left p{
+margin:2px 0 0;
+color:#A1A1AA;
+font-size:13px;
+}
+
+.online-dot{
+font-size:8px;
+margin-right:6px;
+color:#22C55E;
+}
+
+.header-right{
+display:flex;
+align-items:center;
+gap:15px;
+color:white;
+}
+
+.user-avatar{
+width:40px;
+height:40px;
+border-radius:50%;
+background:#10A37F;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-weight:bold;
+}

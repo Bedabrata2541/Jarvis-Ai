@@ -1,0 +1,25 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#09090b;
+overflow-x:hidden;
+}
+
+button,input{
+font-family:inherit;
+}
+/* Dark Theme */
+body.dark {
+    background: #0F172A;
+    color: white;
+}
+
+/* Light Theme */
+body.light {
+    background: #F8FAFC;
+    color: #111827;
+}
