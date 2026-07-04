@@ -45,7 +45,6 @@ Thumbs.db
 mongodb-data/
 
 # Ollama Models (if any local folder exists)
-models/
 
 # Package Lock (optional)
 # package-lock.json
